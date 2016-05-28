@@ -1,12 +1,12 @@
 package week1.square_root
 
 /**
-  * Created by terance on 28.05.16.
+  * Example of the Newton's method to calculate the square root of the given number.
   */
 object SquareRoot {
 
   /**
-    * Calculates the squrea root of the given number using Newton's algorithm
+    * Calculates the square root of the given number using Newton's algorithm
     *
     * @param givenValueToCalculateSquareRoot value to calculate the square root of
     * @return the calculated square root of the given value
