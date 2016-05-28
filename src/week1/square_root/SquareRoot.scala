@@ -7,7 +7,7 @@ object SquareRoot {
 
   def abs(value: Double) = if (value <= 0) -value else value
 
-  def isGoodEnough(foundApproximation: Double, givenValueToCalculateSquareRoot: Double): Boolean =
+  def isGoodEnough(foundApproximation: Double, givenValueToCalculateSquareRoot: Double) =
     abs(foundApproximation * foundApproximation - givenValueToCalculateSquareRoot) < 0.00000000001
 
   def improveApproximation(foundApproximation: Double, givenValueToCalculateSquareRoot: Double) =
