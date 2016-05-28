@@ -5,6 +5,6 @@ import week1.square_root.SquareRoot.squareRoot
   */
 object Main {
   def main(args: Array[String]): Unit = {
-    print(squareRoot(2))
+    print(squareRoot(1e6))
   }
 }

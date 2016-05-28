@@ -5,10 +5,12 @@ package week1.square_root
   */
 object SquareRoot {
 
+  val Epsilon = 1e-10
+
   def abs(value: Double) = if (value <= 0) -value else value
 
   def isGoodEnough(foundApproximation: Double, givenValueToCalculateSquareRoot: Double) =
-    abs(foundApproximation * foundApproximation - givenValueToCalculateSquareRoot) < 0.00000000001
+    abs(foundApproximation * foundApproximation - givenValueToCalculateSquareRoot) / givenValueToCalculateSquareRoot < Epsilon
 
   def improveApproximation(foundApproximation: Double, givenValueToCalculateSquareRoot: Double) =
     (foundApproximation + givenValueToCalculateSquareRoot / foundApproximation) / 2
