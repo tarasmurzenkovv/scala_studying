@@ -5,9 +5,9 @@ object ReducingArrayOfVariables {
     * Applies the given function for each int in the given interval and then sums them.
     *
     * @param reductionFunction - function to apply for each int in the given interval
-    * @param from              starting value of the interval
+    * @param from              - starting value of the interval
     * @param to                - ending value of the interval
-    * @return sum or zero when from is greater than to
+    * @return - sum or zero when from is greater than to
     */
   def sum(reductionFunction: Int => Int, from: Int, to: Int): Int =
     if (from > to) 0
